@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header, .footer {
+  background-color: Green;
+  color: white;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.container:after {
+  content:" ";
+  clear:both;
+  display:block;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 50%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 1px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+td {
+  margin:5%;
+  padding:5%;
+}
+th {
+  background-color:red;
+}
+table {
+  font-family: arial, sans-serif;
+  width: 70%;
+  border-collapse: collapse;
+  
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My mail</h1>
+</div>
+
+<div class="container">
+  <div class="column menu">
+    <ul>
+      <li>Inbox</li>
+      <li>Sent</li>
+      <li>Trash</li>
+      <li>Drafts</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <table>
+  <tr>
+    <th>From</th>
+    <th>Subject</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td>bill gates</td>
+    <td>From microsoft</td>
+    <td>12 hour ago</td>
+  </tr>
+  <tr>
+    <td>Steve job</td>
+    <td>From Apple</td>
+    <td>18 hour ago</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+        </tr></table>
+  
+  </div>
+</div>
+
+<div class="footer">
+  <p>I am ads</p>
+</div>
+
+</body>
+</html>
