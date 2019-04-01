@@ -25,7 +25,6 @@ var countnum=1;
 app.get("/contacts", function(request, response){
     var data = {
         contacts: CONTACTS,
-        userName: "jAYLAL",
         numbers:NUMBERS,
         count:COUNT
     };
