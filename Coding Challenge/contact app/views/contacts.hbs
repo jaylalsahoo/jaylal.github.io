@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to ExpresJS!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-4 col-md-4">
+                <h2>Contact App</h2>
+                <hr>
+                <p>Welcome {{userName}}</p>
+                
+
+                <p><hr></p>
+
+
+                <form action="/contacts" method="POST">
+                    <label>
+                        Enter contact Name: <input name="contactName" type="text" class="form-control">
+                    </label>
+                    <label>
+                        Enter contact no: <input name="contactNo" type="text" class="form-control">
+                    </label>
+                    <button type="submit" class="btn btn-info">Add</button>
+                </form>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">sl.no</th>
+      <th scope="col">contact Name</th>
+      <th scope="col">Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+                    {{#each count}}
+                        {{ this }}<br>
+                    {{/each}}
+                </td>
+      <td>
+                    {{#each contacts}}
+                        {{ this }}<br>
+                    {{/each}}
+                </td>
+      <td>
+                    {{#each numbers}}
+                        {{ this }}<br>
+                    {{/each}}
+                </td>
+    </tr>
+    
+  </tbody>
+</table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
