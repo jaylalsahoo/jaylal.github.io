@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tennis player app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-4 col-md-4">
+                <h2>Tennis Player App</h2>
+                <hr>
+                
+
+                <p><hr></p>
+
+
+                <form action="/players" method="POST">
+                    <label>
+                        Enter Player Name: <input name="playername" type="text" class="form-control">
+                    </label>
+                    <label>
+                        Enter country name: <input name="countryname" type="text" class="form-control">
+                    </label>
+                    <button type="submit" class="btn btn-info">Add</button>
+                </form>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">sl.no</th>
+      <th scope="col">Player Name</th>
+      <th scope="col">country</th>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+                    {{#each count}}
+                        {{ this }}<br>
+                    {{/each}}
+                </td>
+      <td>
+                    {{#each players}}
+                        {{ this }}<br>
+                    {{/each}}
+                </td>
+      <td>
+                    {{#each country}}
+                        {{ this }}<br>
+                    {{/each}}
+                </td>
+    </tr>
+    
+  </tbody>
+</table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
