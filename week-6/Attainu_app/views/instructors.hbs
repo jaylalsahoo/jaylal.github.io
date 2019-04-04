@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attainu Management app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="contaiiner">
+        <div class="row">
+            <div class="col-md-3 offset-md-4">
+                <h1>Attain -Instructor list</h1>
+                <hr>
+                <p>
+                    <a href="/">Go to main menu</a>
+                </p>
+                <table class="table table-striped">
+                    <thead>
+                       <th>Name</th>
+                       <th>phone</th>
+                    </thead>
+                    <tbody>
+                        {{#each instructors}}
+                        <tr>
+                          <td>{{name}}</td>
+                          <td>{{phone}}</td>
+                          {{/each}}
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
