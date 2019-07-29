@@ -1,0 +1,11 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "This program will return the search word in line by line",
+  "main": "search.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jay",
+  "license": "ISC"
+}
