@@ -18,5 +18,5 @@ function bubbleSort(arr){
  console.log("steps",step)
 }
 
-let arr = [1,7,11];
+let arr = [1,7,11,15,17,19,3];
 bubbleSort(arr);
