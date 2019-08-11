@@ -1,0 +1,31 @@
+Array=5,3,8,2,9
+
+step 1-
+   Array=5,3,8,2,9 will become Array=[]
+
+   pivot-5
+   center-5
+   left-3,2// these values are less than pivot element so put in left
+   right-8,9// these values are more than pivot element so put in left
+
+   return qSort(left)//2,3 + 5 + qSort(right)//8,9
+
+step-2 Left
+Array=[3,2] will become empty
+pivot=3
+center-3
+left-2
+right-
+
+return 2 ,3
+
+
+step-3 right
+Array=[8,9]
+
+pivot=8
+center=8
+left-
+right-9
+
+return 8,9
